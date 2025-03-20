@@ -13,9 +13,9 @@ def contact_me():
     return render_template("contact.html")
 
 
-@app.route("/work,<int:work_id>")
-def my_work(work_id=None):
-    return render_template("work.html", work_id=work_id)
+@app.route("/work")
+def my_work():
+    return render_template("work.html")
 
 
 @app.route("/works")
